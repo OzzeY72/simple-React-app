@@ -1,5 +1,6 @@
-import { Button, ConfigProvider, Layout } from 'antd'
+import { ConfigProvider, Layout } from 'antd'
 import { useState } from 'react'
+import { TaskDataCollection } from './components/task-data-collection/task-data-collection'
 import themeConfig from './styles/theme-config'
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
     <ConfigProvider theme={themeConfig}>
       <Layout style={{ minHeight: '100vh' }}>
         <Layout.Content>
-          <Button type='dashed' block>+ Add new task</Button>
+          {/* <JobForm/> */}
+          <TaskDataCollection></TaskDataCollection>
         </Layout.Content>
       </Layout>
     </ConfigProvider>
